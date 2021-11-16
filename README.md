@@ -17,4 +17,4 @@ This will deploy a training portal hosting just this workshop. To get the URL fo
 kubectl get trainingportal/tko-training-portal
 ```
 
-The training portal is configured to allow anonymous access. For your own workshop content you should consider removing anonymous access.
+The training portal is configured to allow anonymous access. For your own workshop content you should consider removing anonymous access..
