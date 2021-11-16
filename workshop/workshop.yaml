@@ -1,0 +1,11 @@
+name: Tanzu for Kubernetes Operations Demo
+
+modules:
+    activate:
+    - workshop-overview
+    - setup-environment
+    - exercises/01-developer-self-service
+    - exercises/02-implement-policy
+    - exercises/03-enterprise-observability
+    - exercises/04-upgrade-backup
+    - workshop-summary

@@ -1,0 +1,13 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: tko-training-portal
+spec:
+  portal:
+    registration:
+      type: anonymous
+  workshops:
+  - name: tko-demo
+    capacity: 1
+    expires: 60m
+    orphaned: 5m

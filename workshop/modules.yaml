@@ -1,0 +1,22 @@
+modules:
+    workshop-overview:
+        name: Workshop Overview
+        exit_sign: Setup Environment
+    setup-environment:
+        name: Setup Environment
+        exit_sign: Start Demo
+    exercises/01-developer-self-service:
+        name: Build Consistent Clusters & Enable Developer Self-Service
+        exit_sign: Implement Policy
+    exercises/02-implement-policy:
+        name: Implement Access, Security, Quota and Backup Policies
+        exit_sign: Enterprise Observability
+    exercises/03-enterprise-observability:
+        name: Enterprise Observability
+        exit_sign: Upgrades and Backup
+    exercises/04-upgrade-backup:
+        name: Upgrades and Backup
+        exit_sign: Summary
+    workshop-summary:
+        name: Demo Summary
+        exit_sign: Finish Demo
