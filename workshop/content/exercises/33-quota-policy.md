@@ -4,10 +4,17 @@ Application development teams love Kubernetes cause they can request infrastruct
 
 - Go to the tab with Tanzu Mission Control, click on **Policies** then **Assignments**
 
-- Click on the tab **Quota**, select **Cluster** then click on **Cluster Group** > `tko-psp-demo`
+- Click on the tab **Quota**, select **Cluster** then click on **Cluster Group** with your username in it
 
-- Notice the Direct Quota Policy applied `quota-large`. Expand it and click **EDIT**
+- Notice there is no Direct Quota Policy applied
 
+- Click on the button **Create Quota Policy** 
+
+- Select a policy type **small** from the **Quota Policy** dropdown
+
+- Give it a name called **tanzu-quota **
+
+- Click the button 
 - Notice it has been assigned an quota to limit of 2 vCPU and 2 GB of memory per workload.
 
 - You can opt to create a custom policy if you don't want to use any of the pre-defined ones or you wish to implement more detailed policies on objects such as: CPU, memory, storage, or even limits on most Kubernetes objects within a namespace.

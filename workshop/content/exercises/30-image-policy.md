@@ -19,8 +19,8 @@ Tanzu Mission control has Image based policies that can be applied to namespaces
 Let's add a namespace to the Cluster we created
 
 - Go to the browser with Tanzu Mission Control, Click on Workspaces from the left hand menu
-- Click Create Namespace 
-- Enter tanzu in the name field
+- Click the button  **Create Namespace** 
+- Enter **tanzu** in the name field
 - Select your cluster from the Cluster dropdown
 - Select the workspace starting with your username from the Workspace dropdown
 - Click the Create button
@@ -43,13 +43,13 @@ Go to the Windows Powershell where the Kubeconfig for your cluster is already do
 
 - Create a deployment with the image `busybox` from Docker Hub
 ```execute
-kubectl create deployment busybox --image=busybox -n tko-image-policy
+kubectl create deployment busybox --image=busybox -n tanzu
 ```
 
 - Notice the deployment is stuck and wont progress because of the image rules:
 ```execute
-kubectl describe deployment busybox -n tko-image-policy
+kubectl describe deployment busybox -n tanzu
 ```
-  Notice the deployment isn't creating any replicas.
+
 
   This is because of the Image Policy we just applied
