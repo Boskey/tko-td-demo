@@ -15,40 +15,41 @@ Tanzu Mission Control, part of the the Tanzu for Kubernetes Operations solution 
 
 Tanzu Mission control has Image based policies that can be applied to namespaces within a cluster. These policies can be applied fleet-wide across clusters and clouds by grouping namespaces together in a logical group called **Workspaces**.
 
-- Assuming you are still in **Policies**, click on the **Image Registry** tab and then **Workspaces**
+![Add Namespace](/workshop/content/images/30-image-policy-workspace-create.png)
+Let's add a namespace to the Cluster we created
 
-- Select the workspace `tko-demo`
+- Go to the browser with Tanzu Mission Control, Click on Workspaces from the left hand menu
+- Click Create Namespace 
+- Enter tanzu in the name field
+- Select your cluster from the Cluster dropdown
+- Select the workspace starting with your username from the Workspace dropdown
+- Click the Create button
 
-- You will notice a Direct Image Registry Policy applied called `no-busybox`
+- Click on **Policies** --> **Assignments** from the left hand menu, click on the **Image Registry** tab and then **Workspaces**
 
-- Expand the policy `no-busybox` and click **EDIT** then click the first **Rule**
+- Select the workspace with your username in it
 
-You will notice this is a custom policy that blocks any container image that has the name `busybox` on it:
+- You will notice no Image Registry Policies have been applied yet
+30-
+- Click on **Create Image Registry Policy**
+- Once the Image Registry Policy wizard opens, click on Image registry template dropdown and select **Custom**
+- Give it a Policy Name called **Busybox**
+- Under Rule, add `busybox` under the image name 
+- Click on Add **Another Rule Button**
+- Click on **Create Policy** Button
 
+Go to the Windows Powershell where the Kubeconfig for your cluster is already downloaded from earlier steps
 
-- An image registry policy can have multiple rules. Take a look at the other attributes of image registry policies that can be applied as a rule.
-
-Let's validate that our image registry policy is working by trying to deploy the `busybox` image on the namespace `tko-image-policy` which is part of the cluster `gke-psp-demo`.
-
-- Go to the **Workshop** tab so you can see the **Terminal**.
-
-- Make sure the namespace `tko-image-policy` exists on the cluster
-```execute
-kubectl --kubeconfig=kubeconfig-gke-psp-demo.yaml get ns
-```
 
 - Create a deployment with the image `busybox` from Docker Hub
 ```execute
-kubectl --kubeconfig=kubeconfig-gke-psp-demo.yaml create deployment busybox --image=busybox -n tko-image-policy
+kubectl create deployment busybox --image=busybox -n tko-image-policy
 ```
 
 - Notice the deployment is stuck and wont progress because of the image rules:
 ```execute
-kubectl --kubeconfig=kubeconfig-gke-psp-demo.yaml describe deployment busybox -n tko-image-policy
+kubectl describe deployment busybox -n tko-image-policy
 ```
   Notice the deployment isn't creating any replicas.
 
-- Delete the deployment
-```execute
-kubectl --kubeconfig=kubeconfig-gke-psp-demo.yaml delete deployment busybox -n tko-image-policy
-```
+  This is because of the Image Policy we just applied
