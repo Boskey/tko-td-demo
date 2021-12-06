@@ -20,6 +20,9 @@ This integrates Tanzu Observability with your Kubernetes Cluster
 
 - On the same screen, under the **Integrations** section, Click on the link **Tanzu Observability**
 ---
+- Login to Tanzu Oberservability using the credentials mentioned under the Tanzu Observability section
+
+---
 
 - Explore the graphs and data a bit, then click on the **Nodes** link in the **Kubernetes Objects** panel near the top of the dashboard.  This highlights that Tanzu Observability gives you multiple perspectives to assess the health of your clusters and infrastructure.
 
