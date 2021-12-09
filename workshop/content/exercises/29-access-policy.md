@@ -1,7 +1,7 @@
 ![Access Policy](/workshop/content/images/29-access-policy.png)
 ## Providing RBAC and Authentication to Development Teams
 
- Kubernetes API is very important as it has the capability of accessing and modifying infrastructure objects. Kubernetes has its won Role based access to the Kubernetes API that determine which user has what level of access. However, by default Kubernetes does not provide any Identity backed Authentication. Tanzu Mission Control provides the capability to automate role based access control to the API authenticated by your Organizations Identity services. VMware Cloud Services can federate to your LDAP, Active Directory, or SAML instance. Tanzu Mission Control will map a user from your organization to a role within the Kubernetes cluster. This is the access policy and can be applied in a blanket mode across clusters at once.
+ Kubernetes API is very important as it has the capability of accessing and modifying infrastructure objects. Kubernetes has it's own Role based access to the Kubernetes API that determine which user has what level of access. However, by default Kubernetes does not provide any Identity backed Authentication. Tanzu Mission Control provides the capability to automate role based access control to the API authenticated by your Organizations Identity services. VMware Cloud Services can federate to your LDAP, Active Directory, or SAML instance. Tanzu Mission Control will map a user from your organization to a role within the Kubernetes cluster. This is the access policy and can be applied in a blanket mode across clusters at once.
 ---
 
 - Click on **Policies** from the left hand navigation menu, click **Assignments** then click on the **Access** tab.
