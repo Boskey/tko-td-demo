@@ -33,7 +33,7 @@ Let's add a namespace to the Cluster we created so we can apply an image policy 
 - Select the workspace starting with your username from the Workspace dropdown
 - Click the Create button
 ---
-tmc_Workspace_list.png
+../images/tmc_Workspace_list.png
 
 - Click on **Policies** --> **Assignments** from the left hand menu, click on the **Image Registry** tab and then **Workspaces**
 ---

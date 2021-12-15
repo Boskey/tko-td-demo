@@ -5,13 +5,13 @@ Containers are the base unit of deployment that runs any application on Kubernet
 ---
 By default, Tanzu Mission Control implements security policies around running pods with root access, privileged mode, access to host networks, volumes etc.
 ---
-tmc_Security_Policy_None.png
+../images/tmc_Security_Policy_None.png
 
 To view these policies:
 
 - Click on the **Security** tab within the policy assignments section and click on the **Clusters** view if you are still seeing **Workspaces**.
 ---
-tmc_Security_Policy_None.png
+../images/tmc_Security_Policy_None.png
 
 Let's add a Direct Security policy for your cluster group
 
@@ -19,7 +19,7 @@ Let's add a Direct Security policy for your cluster group
 - Click on **Create Security Policy** Button 
 
 ---
-tmc_Security_Policy_Strict_Wizard.png
+../images/tmc_Security_Policy_Strict_Wizard.png
 
 - Select **Strict** from the dropdown for **security template **
 - Give the Policy a name, e.g: strict
