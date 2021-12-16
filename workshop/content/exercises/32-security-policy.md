@@ -27,11 +27,14 @@ Let's add a Direct Security policy for your cluster group
 
 This will create a strict security policy that will disable any container from running that requires privileged mode. 
 ---
+tmc_Security_Policy_Create_NGINX_Container.png
+
 - Go to the Powershell window,
 ```execute
 kubectl create deployment nginx --image=nginx 
 ```
 ---
+tmc_Security_Policy_NGINX_Container_Failed.png
 - Notice the pods do get created because default PSP is disabled on this cluster.
 ```execute
 kubectl get pods 

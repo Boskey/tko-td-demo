@@ -56,6 +56,8 @@ tmc_Image_Registry_Policies.png
 - Click on **Create Policy** Button
 
 ---
+tmc_Security_Policy_Create_Busybox_Container.png
+
 Go to the Windows Powershell where the Kubeconfig for your cluster is already downloaded from earlier steps
 
 - Create a deployment with the image `busybox` from Docker Hub
@@ -63,6 +65,7 @@ Go to the Windows Powershell where the Kubeconfig for your cluster is already do
 kubectl create deployment busybox --image=busybox -n tanzu
 ```
 ---
+tmc_Security_Policy_Busybox_Container_Failed.png
 - Notice the deployment is stuck and wont progress because of the image rules:
 ```execute
 kubectl describe deployment busybox -n tanzu
