@@ -25,6 +25,7 @@ This integrates Tanzu Observability with your Kubernetes Cluster
 
 - On the same screen, under the **Integrations** section, Click on the link **Tanzu Observability**
 ---
+../images/to_Login_Page.png
 
 - Login to Tanzu Oberservability using the credentials mentioned under the Tanzu Observability section
 
