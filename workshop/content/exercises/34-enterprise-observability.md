@@ -13,7 +13,7 @@ Tanzu for Kubernetes Operations enables you to offer observability capabilities 
 ---
 ../images/tmc_TO_Action_Menu_Add.png
 
-- Click on **Integrations**  --> Add --> tanzu Observability
+- Click on **Integrations**  -->  Tanzu Observability --> Add 
 ---
 ../images/tmc_Add_TO_Integration.png
 

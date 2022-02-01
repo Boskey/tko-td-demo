@@ -1,0 +1,4 @@
+
+You will now see a screen with message 'Your cluster is being created'. Please allow 7-10 minutes for the Tanzu Kubernetes Cluster status to show as 'Ready'
+
+Note; You might see a temporary message of "This cluster status is unknown". This message will go if you refresh the page.

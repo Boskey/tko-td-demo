@@ -17,9 +17,10 @@
 ---
 /workshop/content/images/tmc_Access_Policy_Create_Policy.png
 
-- Select the Kubernetes Role from the **Roles** dropdown
+- An Operations team can select various roles and assign it to a user/group from the organization's Identity. Take a look at the various roles available from the dropdown list.
 
 - A user from the organizations identity provider can be added with an email ID or an imported drop-down list.
+- Note: You won't be able to add any users since your role is restricted.
 ---
 /workshop/content/images/tmc_Access_Policy_Create_Policy.png
 

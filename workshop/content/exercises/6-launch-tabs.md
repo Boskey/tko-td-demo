@@ -1,4 +1,4 @@
-![Pre-requisites](../images/1-what-is-tko.png)
+![Launch Solution](../images/1-what-is-tko.png)
 
 When using the walk-through, please do NOT create more than 1 Tanzu Kubernetes Cluster
 
