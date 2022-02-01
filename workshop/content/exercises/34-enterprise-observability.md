@@ -19,6 +19,7 @@ Tanzu for Kubernetes Operations enables you to offer observability capabilities 
 
 - A wizard opens up asking for Tanzu Observability Account
 - Select the one available from the drop down list
+- Click the **Confirm** Button
 This integrates Tanzu Observability with your Kubernetes Cluster
 ---
 ../images/tmc_TO_Link_Cluster_View.png
