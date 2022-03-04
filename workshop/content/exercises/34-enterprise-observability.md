@@ -46,5 +46,6 @@ This integrates Tanzu Observability with your Kubernetes Cluster
 
 ---
 - The three-dot menu in the upper right hand corner allows you to select **Clone**, and then you can customize the dashboard to your preferences by moving graphs around, adding new graphs, etc.
---
+
+
 
